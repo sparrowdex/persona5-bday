@@ -223,7 +223,7 @@ export default function BirthdayCard() {
           
           {/* VIEW A: THE TRADITIONAL CUTOUT RANSOM MESSAGE CARD */}
           {currentView === "message" && (
-            <div className="flex items-center gap-6 md:gap-10 justify-center w-full max-w-4xl">
+            <div className="flex flex-col md:flex-row items-center gap-6 md:gap-10 justify-center w-full max-w-4xl">
               <div className="flex flex-col items-center w-full max-w-2xl">
                 <div className="animate-[slap_0.4s_ease-out_both] bg-black text-white p-8 md:p-12 border-4 border-white shadow-[10px_10px_0px_0px_rgba(255,255,255,1)] w-full mb-12 relative min-h-[200px] flex items-center justify-center -rotate-1">
                   <div className="flex flex-wrap justify-center gap-y-8 gap-x-4">
@@ -277,7 +277,7 @@ export default function BirthdayCard() {
 
               <button
                 onClick={() => setCurrentView("check_stats")}
-                className="hidden md:block text-white hover:text-[#E60012] font-black text-5xl transition-colors duration-200 active:scale-90 select-none shrink-0 cursor-pointer"
+                className="text-white hover:text-[#E60012] font-black text-4xl md:text-5xl transition-colors duration-200 active:scale-90 select-none shrink-0 cursor-pointer"
                 title="Next View"
               >
                 ➔
@@ -287,7 +287,7 @@ export default function BirthdayCard() {
 
           {/* VIEW A.5: INTERMEDIATE "CHECK YOUR SOCIAL STATS" MESSAGE */}
           {currentView === "check_stats" && (
-            <div className="flex items-center gap-6 md:gap-10 justify-center w-full max-w-4xl">
+            <div className="flex flex-col md:flex-row items-center gap-6 md:gap-10 justify-center w-full max-w-4xl">
               <div className="flex flex-col items-center w-full max-w-2xl">
                 <div className="animate-[slap_0.4s_ease-out_both] bg-black text-white p-8 md:p-12 border-4 border-white shadow-[10px_10px_0px_0px_rgba(255,255,255,1)] w-full mb-12 relative min-h-[200px] flex items-center justify-center rotate-1">
                   <div className="flex flex-wrap justify-center gap-y-8 gap-x-4">
@@ -328,7 +328,7 @@ export default function BirthdayCard() {
 
               <button
                 onClick={() => setCurrentView("stats")}
-                className="hidden md:block text-white hover:text-[#E60012] font-black text-5xl transition-colors duration-200 active:scale-90 select-none shrink-0 cursor-pointer animate-[slap_0.4s_ease-out_both]"
+                className="text-white hover:text-[#E60012] font-black text-4xl md:text-5xl transition-colors duration-200 active:scale-90 select-none shrink-0 cursor-pointer animate-[slap_0.4s_ease-out_both]"
                 title="Next View"
                 style={{ animationDelay: '1000ms' }}
               >
@@ -343,7 +343,7 @@ export default function BirthdayCard() {
               
               {/* LEFT COLUMN: Protagonist Sliding In */}
               <div 
-                className="fixed left-[-40%] md:left-[-3%] bottom-0 w-[110%] md:w-[80%] flex items-end justify-start pointer-events-none z-20 animate-[slide-in-left_0.6s_ease-out_both] [animation-delay:2000ms] md:[animation-delay:800ms]"
+                className="fixed left-[-10%] md:left-[-3%] bottom-0 w-[110%] md:w-[80%] flex items-end justify-start pointer-events-none z-20 animate-[slide-in-left_0.6s_ease-out_both] [animation-delay:2000ms] md:[animation-delay:800ms]"
               >
                 <img 
                   src="/images/Protagonist.png" 
