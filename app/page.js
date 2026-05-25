@@ -343,8 +343,7 @@ export default function BirthdayCard() {
               
               {/* LEFT COLUMN: Protagonist Sliding In */}
               <div 
-                className="fixed left-[-40%] md:left-[-3%] bottom-0 w-[110%] md:w-[80%] flex items-end justify-start pointer-events-none z-20 animate-[slide-in-left_0.6s_ease-out_both]"
-                style={{ animationDelay: '800ms' }}
+                className="fixed left-[-40%] md:left-[-3%] bottom-0 w-[110%] md:w-[80%] flex items-end justify-start pointer-events-none z-20 animate-[slide-in-left_0.6s_ease-out_both] [animation-delay:2000ms] md:[animation-delay:800ms]"
               >
                 <img 
                   src="/images/Protagonist.png" 
